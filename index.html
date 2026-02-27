@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMoto Pro - Votre Concessionnaire de Confiance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <span class="logo-icon">🏎️</span>
+                    <span class="logo-text">AutoMoto <span class="logo-accent">Pro</span></span>
+                </a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link active">Accueil</a></li>
+                    <li><a href="#vehicles" class="nav-link">Voitures</a></li>
+                    <li><a href="#motorcycles" class="nav-link">Motos</a></li>
+                    <li><a href="#about" class="nav-link">À propos</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <a href="#contact" class="btn btn-cta">Contactez-nous</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <span class="hero-badge">Concessionnaire Premium</span>
+                <h1 class="hero-title">
+                    <span class="title-line">Trouvez Votre</span>
+                    <span class="title-line accent">Véhicule Idéal</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Excellence automobile et moto depuis plus de 20 ans. 
+                    Qualité garantie, transparence totale, service personnalisé.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#vehicles" class="btn btn-primary">Voir les véhicules</a>
+                    <a href="#contact" class="btn btn-outline">Contactez-nous</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Véhicules vendus</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Années d'expérience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Clients satisfaits</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Découvrir</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Vehicles Section -->
+    <section class="vehicles-section" id="vehicles">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Notre Catalogue</span>
+                <h2 class="section-title">Nos Véhicules en Vedette</h2>
+                <p class="section-subtitle">Découvrez notre sélection exclusive de véhicules de qualité</p>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">
+                    <span class="tab-icon">🚗</span>
+                    <span>Tous</span>
+                    <span class="tab-count" id="totalCount">6</span>
+                </button>
+                <button class="tab-btn" data-category="car">
+                    <span class="tab-icon">🚗</span>
+                    <span>Voitures</span>
+                    <span class="tab-count" id="carCount">3</span>
+                </button>
+                <button class="tab-btn" data-category="motorcycle">
+                    <span class="tab-icon">🏍️</span>
+                    <span>Motos</span>
+                    <span class="tab-count" id="motorcycleCount">3</span>
+                </button>
+            </div>
+
+            <!-- Vehicles Grid -->
+            <div class="vehicles-grid" id="vehiclesGrid">
+                <!-- Vehicles will be injected by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pourquoi Nous Choisir</span>
+                <h2 class="section-title">L'Excellence Auto & Moto</h2>
+                <p class="section-subtitle">Nous nous engageons à vous offrir la meilleure expérience d'achat</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3 class="feature-title">Contrôle Qualité</h3>
+                    <p class="feature-text">Chaque véhicule passe par un contrôle technique rigoureux et un diagnostic complet avant mise en vente.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3 class="feature-title">Garantie</h3>
+                    <p class="feature-text">Tous nos véhicules bénéficient d'une garantie étendue pour votre tranquillité totale.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3 class="feature-title">Prix Transparents</h3>
+                    <p class="feature-text">Aucun frais caché. Prix justes et négociables avec possibilité de financement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3 class="feature-title">Service Après-Vente</h3>
+                    <p class="feature-text">Notre atelier partenaire vous offre un suivi entretien et des tarifs préférentiels.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📞</div>
+                    <h3 class="feature-title">Conseiller Dédié</h3>
+                    <p class="feature-text">Un interlocuteur unique pour vous guider tout au long de votre parcours d'achat.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3 class="feature-title">Livraison Possible</h3>
+                    <p class="feature-text">Nous livrons votre véhicule où vous le souhaitez dans toute la France.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Témoignages</span>
+                <h2 class="section-title">Ce Que Disent Nos Clients</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Excellent professionnelle. J'ai acheté ma BMW Serie 5 et le service était irréprochable. Délai rapide et véhicule conforme à la description."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <span class="author-name">Marc Renault</span>
+                            <span class="author-role">Client depuis 2022</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Parfait pour l'achat de ma moto. Équipe sérieuse et disponible. Le financement a été accordé rapidement. Je recommande!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SL</div>
+                        <div class="author-info">
+                            <span class="author-name">Sophie Laurent</span>
+                            <span class="author-role">Cliente depuis 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Troisième achat chez AutoMoto Pro. Toujours aussi satisfaite. La qualité des véhicules et le service après-vente font la différence."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <span class="author-name">Jean Dupont</span>
+                            <span class="author-role">Client depuis 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Contactez-Nous</span>
+                    <h2 class="section-title">Parlons de Votre Projet</h2>
+                    <p class="contact-text">
+                        Vous recherchez un véhicule spécifique? Notre équipe est à votre disposition 
+                        pour vous guider et vous proposer des solutions personnalisées.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p>123 Avenue des Champs-Élysées<br>75008 Paris, France</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>+33 1 23 45 67 89</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@automotopro.fr</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🕐</span>
+                            <div>
+                                <h4>Horaires</h4>
+                                <p>Lun - Sam: 9h00 - 19h00<br>Dimanche: Sur RDV</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required placeholder="Votre nom">
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                                <span class="form-error" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+33 6 00 00 00 00">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <select id="subject" name="subject">
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="achat_voiture">Achat d'une voiture</option>
+                                <option value="achat_moto">Achat d'une moto</option>
+                                <option value="reprise">Reprise de véhicule</option>
+                                <option value="financement">Financement</option>
+                                <option value="autre">Autre demande</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet..."></textarea>
+                            <span class="form-error" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Envoyer le message</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                        <div class="form-success" id="formSuccess">
+                            ✅ Message envoyé avec succès! Nous vous répondrons dans les plus brefs délais.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🏎️</span>
+                        <span class="logo-text">AutoMoto <span class="logo-accent">Pro</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        Votre partenaire de confiance pour l'achat de véhicules automobiles et motos. 
+                        Qualité, transparence et service depuis plus de 20 ans.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#vehicles">Voitures</a></li>
+                        <li><a href="#motorcycles">Motos</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Nos Services</h4>
+                    <ul>
+                        <li><a href="#">Achat véhicules</a></li>
+                        <li><a href="#">Reprise véhicule</a></li>
+                        <li><a href="#">Financement</a></li>
+                        <li><a href="#">Garantie étendue</a></li>
+                        <li><a href="#">Livraison à domicile</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">CGV</a></li>
+                        <li><a href="#">Plan du site</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoMoto Pro. Tous droits réservés. Conçu avec ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vehicle Modal -->
+    <div class="modal" id="vehicleModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Fermer">×</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be injected by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
